@@ -1,0 +1,15 @@
+2.
+CREATE TABLE Locations(
+    Location_id int(4) PRIMARY KEY,
+    Street_Address VARCHAR(40) NOT NULL,
+    Postal_Code VARCHAR(12) NOT NULL,
+    City VARCHAR(30),
+    State_Province VARCHAR(25) NOT NULL,
+    Country_ID VARCHAR(2) NOT NULL
+);
+
+INSERT INTO locations VALUES(1400,'2014 Jabberwocky Rd','26192','Southlake','Texas','US');
+INSERT INTO locations VALUES(1500,'2011 Interiors Blvd','99236','South San Francisco','California','US');
+INSERT INTO locations VALUES(1700,'2004 Charade Rd','98199','Seattle','Washington','US');
+INSERT INTO locations VALUES(1800,'460 Bloor St.W.','ON M5S 1X8','Toronto','Ontario','CA');
+INSERT INTO locations VALUES(2500,'Magdalen Centre-The Oxford Sc. Park','OX9 9ZB','Oxford','Oxford','UK');
