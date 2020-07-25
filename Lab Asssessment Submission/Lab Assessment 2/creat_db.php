@@ -7,7 +7,7 @@ if($link == false)
     die ("Error:Could Not connect.".mysqli_connect_error());
 }
 
-$sql ="CREATE DATABASE VS_CODE_TEST";
+$sql ="CREATE DATABASE HomeWork2";
 
 if(mysqli_query($link,$sql)){
     echo "DB Created";
