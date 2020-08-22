@@ -1,0 +1,3 @@
+1.SELECT Last_Name ||' is a '|| Job_Id AS "Employee and Title" FROM employee;
+2.SELECT Last_name, Salary, Commission_pct from employee where Commission_pct is not null order by Salary desc;
+3.SELECT Last_Name,Hire_Date FROM employee WHERE Hire_Date LIKE '1994%';
