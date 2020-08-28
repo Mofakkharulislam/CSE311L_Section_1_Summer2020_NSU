@@ -1,0 +1,9 @@
+1. SELECT Last_Name,Department_Id,(Salary/30) AS 'Daily Salary' FROM employee
+
+2. SELECT CONCAT(Last_Name, ' , ', Job_Id) AS 'Employee and Title' FROM employee
+
+3. SELECT Last_Name,Job_Id,Hire_Date FROM employee WHERE Hire_Date BETWEEN '1998-02-07' AND '1998-03-01' ORDER BY Hire_Date ASC
+
+4. SELECT Last_Name,Hire_Date, department_id FROM employee WHERE Department_Id in (20,50) order by Hire_Date ASC
+
+5. SELECT Last_Name,Hire_Date FROM employee WHERE Hire_Date LIKE '1994%' AND Salary>9200
