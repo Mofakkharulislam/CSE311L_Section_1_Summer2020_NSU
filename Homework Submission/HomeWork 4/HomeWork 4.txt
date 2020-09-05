@@ -5,7 +5,8 @@ from employee GROUP BY Job_Id
 FROM employee
 WHERE Manager_id IS NOT NULL AND Salary>6000 ORDER BY Salary DESC
 
-3.SELECT Department_Name, Location_Id AS "Location",COUNT(*) AS 'Number of People', 
+3.SELECT Department_Name, Location_Id AS "Location",COUNT(*) 
+AS 'Number of People', 
 ROUND(AVG(employee.Salary),2) AS "Salary"
 FROM departnment
 INNER JOIN employee
@@ -15,6 +16,6 @@ ON employee.Manager_id = departnment.Manager_Id GROUP BY Department_Name
 FROM employee
 GROUP BY Job_Id
 
-5.SELECT Last_Name,Salary
+5.SELECT Last_Name,Salary, Commission_pct
 FROM employee
-WHERE Commission_pct IS NULL ORDER BY Salary AND Commission_pct
+WHERE Commission_pct IS NULL ORDER BY Salary DESC, Commission_pct DESC
